@@ -1,7 +1,7 @@
 ＜サイドバー＞
     <div class = "side-bar-header">
       <div class = "header-name">
-        <a href="#">user.name</a>
+        <%= link_to current_user.name, "/users/#{current_user.id}/edit" %>
       </div>
       <div class = "create-room">
         <a href = "#">チャットを作成する</a>
